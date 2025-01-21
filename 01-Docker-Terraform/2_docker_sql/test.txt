@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: kestra
+      POSTGRES_USER: kestra
+      POSTGRES_PASSWORD: k3str4
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d $${POSTGRES_DB} -U $${POSTGRES_USER}"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+
+
+copy paste in the bash
+
+  docker run -it \
+    -e  POSTGRES_USER="root" \
+    -e  POSTGRES_PASSWORD="root" \
+    -e  POSTGRES_DB="ny_taxi" \
+    -v "c:/Users/subed/Documents/Data analyst/Data Engineering/Data-Engineering-Zoomcamp/01-Docker-Terraform/2_docker_sql/ny_taxi_postgres_data:/var/lib/postgresql/data" \
+    -p  5432:5432 \
+    postgres
+
+// docker doesnt keep this state so next time we will run the state will be lost, which we dont want
+// we need to map our foldr in our host machine to the folder in the container and this is called mounting.
