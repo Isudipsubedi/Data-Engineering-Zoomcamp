@@ -1,11 +1,10 @@
 ## Docker and SQL
 
-Notes I used for preparing the videos: [link](https://docs.google.com/document/d/e/2PACX-1vRJUuGfzgIdbkalPgg2nQ884CnZkCg314T_OBq-_hfcowPxNIA0-z5OtMTDzuzute9VBHMjNYZFTCc1/pub)
+Notes I used: [link](https://docs.google.com/document/d/e/2PACX-1vRJUuGfzgIdbkalPgg2nQ884CnZkCg314T_OBq-_hfcowPxNIA0-z5OtMTDzuzute9VBHMjNYZFTCc1/pub)
 
 
 ## Commands 
 
-All the commands from the video
 
 Downloading the data
 
@@ -13,7 +12,6 @@ Downloading the data
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz 
 ```
 
-> Note: now the CSV data is stored in the `csv_backup` folder, not `trip+date` like previously
 
 ### Running Postgres with Docker
 
