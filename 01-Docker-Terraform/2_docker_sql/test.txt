@@ -26,3 +26,7 @@ copy paste in the bash
 
 // docker doesnt keep this state so next time we will run the state will be lost, which we dont want
 // we need to map our foldr in our host machine to the folder in the container and this is called mounting.
+
+https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+
+This gives us the information about the datatypes.
